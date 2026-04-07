@@ -1,0 +1,21 @@
+command: ["streamlit", "run", "app.py"]
+env:
+  # AWS (1-4)
+  - name: API_AWS_CATALOG
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>1"
+  - name: API_AWS_EXTERNAL_LOCATION
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>2"
+  - name: API_AWS_STORAGE_CREDENTIAL
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>3"
+  - name: API_AWS_SCIM_SYNC
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>4"
+
+  # Azure (5-8)
+  - name: API_AZURE_CATALOG
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>5"
+  - name: API_AZURE_EXTERNAL_LOCATION
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>6"
+  - name: API_AZURE_STORAGE_CREDENTIAL
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>7"
+  - name: API_AZURE_SCIM_SYNC
+    value: "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/<path>8"
